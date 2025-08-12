@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:type="MailApp">
+  <Id>7f7fc8d9-7b4f-4f9f-9c2a-000000chatgptmvp</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>JP Pieterse</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="ChatGPT (MVP)"/>
+  <Description DefaultValue="Summarize and draft replies from the current email (ReadItem only)."/>
+
+  <IconUrl DefaultValue="https://YOUR-STATIC-HOST/web/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://YOUR-STATIC-HOST/web/icon-64.png"/>
+
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://YOUR-STATIC-HOST/web/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
+  <Permissions>ReadItem</Permissions>
+
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  </Rule>
+</OfficeApp>

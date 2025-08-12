@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ChatGPT for Outlook (MVP)</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+  <h3>ChatGPT MVP</h3>
+
+  <div>
+    <label>OpenAI API key</label><br/>
+    <input id="apiKey" type="password" style="width:100%"/>
+    <button id="saveKey">Save</button>
+  </div>
+  <hr/>
+  <div>
+    <button id="btnLoad">Load current email</button>
+    <button id="btnSummary">Summarize</button>
+    <button id="btnDraft">Draft reply</button>
+  </div>
+  <pre id="out" style="white-space:pre-wrap;border:1px solid #ccc;padding:8px;margin-top:10px;"></pre>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
