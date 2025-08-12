@@ -9,8 +9,8 @@
   <DisplayName DefaultValue="ChatGPT (MVP)"/>
   <Description DefaultValue="Summarize and draft replies from the current email (ReadItem only)."/>
 
-  <IconUrl DefaultValue="https://github.com/JPPieterse/outlook-chatgpt-mvp/web/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://github.com/JPPieterse/outlook-chatgpt-mvp/web/icon-64.png"/>
+  <IconUrl DefaultValue=https://jppieterse.github.io/outlook-chatgpt-mvp/web/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://jppieterse.github.io/outlook-chatgpt-mvp/web/icon-64.png"/>
 
   <Hosts>
     <Host Name="Mailbox"/>
@@ -25,7 +25,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://github.com/JPPieterse/outlook-chatgpt-mvp/web/taskpane.html"/>
+        <SourceLocation DefaultValue="https://jppieterse.github.io/outlook-chatgpt-mvp/web/taskpane.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
